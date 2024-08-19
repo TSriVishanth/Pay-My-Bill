@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PaymyBill-Dashboard</title>
+    <link rel="icon" href="./assets/images/fav.png" type="png" />
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <!-- font-popins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!--Owl Css-->
+    <link rel="stylesheet" href="./assets/vendor/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/vendor/css/owl.theme.default.min.css" />
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="./assets/css/paymybill.css" />
+</head>
+
+<body>
+    <header class="fixed-top nav-element-top pmg-nav">
+        <nav class="container navbar navbar-expand-xl py-0 py-sm-1 mb-0">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <button class="side-m side-btn">
+                <img src="assets/images/sidemenu.png" alt="">
+            </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img src="./assets/images/menu.png" alt=""></span>
+            </button>
+            <div class="collapse navbar-collapse text-center " id="navbarSupportedContent">
+                <div class="ml-auto">
+                    <div class="">
+                        <ul class="list-unstyled d-lg-flex  nav-element mb-0">
+                            <li class="">
+                                <a href="index.html" class="text-dark active font-size15 font-w600 py-2 px-3">Home</a>
+                            </li>
+                            <li>
+                                <a href="bill.html" class="text-dark font-size15 font-w600 py-2  px-3">Paybills</a>
+                            </li>
+                            <li>
+                                <a href="topup.html" class="text-dark font-size15 font-w600 py-2 px-3">Book & Buy
+                                    Tickets</a>
+                            </li>
+                            <li class="">
+                                <a href="rewards.html" class="text-dark  font-size15 font-w600 py-2 px-3">Rewards</a>
+                            </li>
+                            <li>
+                                <a href="withdraw.html" class="text-dark font-size15 font-w600 py-2  px-3">Wallet
+                                    Transfer </a>
+                            </li>
+
+                            <li>
+                                <div class="dropdown prof mx-5">
+                                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                        <a href="./calculator.html" class="text-dark  font-size15 font-w700 py-2 px-3">
+                                            <img src="./assets/images/nav-pr.png" alt="">
+                                            Welcome, <span class="font-size14 font-w500">
+                                                David Villa
+                                            </span>
+
+                                        </a>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Topup</a>
+                                        <a class="dropdown-item" href="#">My Orders</a>
+                                        <a class="dropdown-item" href="#">Rewards</a>
+                                        <a class="dropdown-item" href="#">Notification</a>
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                        <div class="dropdown-divider mr-5 "></div>
+                                        <a class="dropdown-item error" href="#">Help & Support</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="drp-pos">
+                                <div class="dropdown wallet">
+                                    <button class="btn mx-auto wallet-b dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                        <a href="#" class="text-dark  font-size15 font-w600 py-2 px-3">
+                                            <img src="./assets/images/Walletn.png" alt="" class="wallet-w">
+                                        </a>
+                                    </button>
+                                    <div class="dropdown-menu p-4" aria-labelledby="dropdownMenuButton">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <p class="font-size18 mb-0 font-w800 text-lit">Wallet</p>
+                                            <button class="btn top px-4 py-1">
+                                                Topup
+                                            </button>
+                                        </div>
+                                        <div class="d-flex mt-3 flex-wrap align-items-center">
+                                            <div class="inr">
+                                                <img src="./assets/images/inr.png" alt="">
+                                            </div>
+                                            <div class="ml-4">
+                                                <p class="text-dark mb-0 font-w500">Balance</p>
+                                                <p class="font-w700 mb-0 font-size20">12,546.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-3 flex-wrap align-items-center">
+                                            <div class="pt-3">
+                                                <button class="transfer-btn btn px-4 py-2" data-toggle="modal" data-target="#topup-poup">
+                                                    Transfer
+                                                </button>
+                                            </div>
+                                            <div class="ml-0 ml-md-3 pt-3">
+                                                <button class="request  btn px-2 py-2">
+                                                    Request Topup
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+    <!-- Rewards Page-->
+    <section class="section-p cal">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-12">
+                    <div class="request-main">
+                        <h4 class="font-w700 mb-0">Dashboard
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex cal-main">
+                <div class="sidebar mb-4">
+                    <div class="side-padding">
+                        <div class="side-profile">
+                            <div class="">
+                                <ul class="list-unstyled sidelist">
+                                    <li class="active">
+                                        <a href="#" class="list-border">
+                                            <div class="d-flex justify-content-start align-items-center  bg-d">
+                                                <img src="assets/images/dash.png" class="pr-3" alt="">
+                                                <h5>Dashboard</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#" class="list-border">
+                                            <div class="d-flex justify-content-start align-items-center bg-d">
+                                                <img src="assets/images/sm2.png" class="pr-3" alt="">
+                                                <h5>Mobile Recharge</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#" class="list-border">
+                                            <div class="d-flex justify-content-start align-items-center  bg-d">
+                                                <img src="assets/images/sm3.png" class="pr-3" alt="">
+                                                <h5>Topup DTH</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#" class="list-border">
+                                            <div class="d-flex justify-content-start align-items-center  bg-d">
+
+                                                <img src="assets/images/sm4.png" class="pr-3" alt="">
+                                                <h5>Book Gas Cylider</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#" class="list-border">
+                                            <div class="d-flex justify-content-start align-items-center  bg-d">
+                                                <img src="assets/images/sm5.png" class="pr-3" alt="">
+                                                <h5>Credit Card Bills</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="">
+                                        <a href="#" class="list-border">
+                                            <div class="d-flex justify-content-start align-items-center  bg-d">
+                                                <img src="assets/images/sm6.png" class="pr-3" alt="">
+                                                <h5>Rent Payment</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#" class="list-border">
+                                            <div class="d-flex justify-content-start align-items-center  bg-d">
+
+                                                <img src="assets/images/sm7.png" class="pr-3" alt="">
+                                                <h5>Bus/Train/AirBooking</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#" class="list-border">
+                                            <div class="d-flex justify-content-start align-items-center  bg-d">
+                                                <img src="assets/images/sm8.png" class="pr-3" alt="">
+                                                <h5>Referral</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="main-section w-100">
+                    <div class="row">
+                        <div class="col-lg-8 my-2">
+                            <div class="profile-box p-4">
+                                <div class="edit-profile text-right w-100">
+                                    <a href="#">
+                                        <h4> <img src="assets/images/edit.png" alt="">Edit Profile</h4>
+                                    </a>
+                                </div>
+                                <div class="profile-here offset-sm-6 offset-1">
+                                    <div>
+                                        <img src="assets/images/dashprofile.png " class="dash-profile " alt=" ">
+                                    </div>
+                                    <div class="ml-3 ">
+                                        <h6>Welcome!</h6>
+                                        <p>David Willa</p>
+                                        <div>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="far fa-star "></i>
+                                            <i class="far fa-star "></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 my-2">
+                            <div class="ver-box">
+                                <h5> <img src="assets/images/nt_verify.png" alt=""> Not Secured</h5>
+                                <p>2 Factor Authentication</p>
+                                <button class="red-btn">
+                                    Enable
+                                </button>
+                            </div>
+                            <div class="ver-box nt-ver mt-3">
+                                <h5> <img src="assets/images/verified.png" alt="">Verfied</h5>
+                                <p>KYC Verfications</p>
+                                <button class="gree-btn">
+                                    View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gray-bg mt-3 mb-2">
+                        <div>
+                            <h4>Wallet</h4>
+                            <p>Your Wallet Balance</p>
+                            <h5> ₹ 2,329 <span>
+                                    .00
+                                </span></h5>
+                        </div>
+                        <div class="widge-box flex-wrap">
+                            <a class="widge-inner">
+                                <div class="bg-img">
+                                    <img src="assets/images/down1.png" alt="">
+                                </div>
+                                <p>Add Money</p>
+                            </a>
+                            <a class="widge-inner">
+                                <div class="bg-img">
+                                    <img src="assets/images/down2.png" alt="">
+                                </div>
+                                <p>Withdraw</p>
+                            </a>
+                            <a class="widge-inner">
+                                <div class="bg-img">
+                                    <img src="assets/images/down3.png" alt="">
+                                </div>
+                                <p>Transfer</p>
+                            </a>
+                            <a class="widge-inner">
+                                <div class="bg-img">
+                                    <img src="assets/images/down-4.png" alt="">
+                                </div>
+                                <p>Request</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 my-2">
+                            <div class="reward-bg">
+                                <h4>Rewards</h4>
+                                <p>Reward Points</p>
+                                <h6>02 </h6>
+
+                                <button class="primary-btn font-size15 font-w600 px-4 py-2 mt-4">Redeem Now</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 my-2">
+                            <div class="reward-bg reww-b">
+                                <h4>Referral</h4>
+                                <div class="d-flex justify-content-between bb-b flex-wrap">
+                                    <div class="d-flex my-2">
+                                        <div class="dg-bg mr-3">
+                                            <h6>DGBTC</h6>
+                                        </div>
+                                        <div>
+                                            <p>Referral Coins</p>
+                                            <h6 class="border-0">12</h6>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex my-2">
+                                        <div class="dg-bg mr-3">
+                                            <img src="assets/images/3-User.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p>Referral Coins</p>
+                                            <h6 class="border-0">04</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <button class="primary-btn font-size15 font-w600 px-4 py-2 mt-4">Redeem Now</button>
+                                    <div class="referal mt-2">
+                                        <p>Your Referral Link</p>
+                                        <h6 class="border-0">http://paymybill.com/#t76ygs <img src="assets/images/copy-w.png" class="copy" alt=""></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 my-4">
+                            <div class=" pmg-table">
+                                <div>
+                                    <h5>Login History</h5>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        <h5>103.87.105.218</h5>
+                                                        <p>Oct 20, 2022</p>
+                                                        <h6>Chrome v95.0.4638.69</h6>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <p>Login</p>
+                                                    <h2 class="suxx">Successful</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        <h5>103.87.105.218</h5>
+                                                        <p>Oct 20, 2022</p>
+                                                        <h6>Chrome v95.0.4638.69</h6>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <p>Login</p>
+                                                    <h2 class="fai">Failed</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        <h5>103.87.105.218</h5>
+                                                        <p>Oct 20, 2022</p>
+                                                        <h6>Chrome v95.0.4638.69</h6>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <p>Login</p>
+                                                    <h2 class="suxx">Successful</h2>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a href="#">
+                                        <img src="assets/images/ar1.png" alt=""> View all Login History
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-7 my-4">
+                            <div class=" pmg-table">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5>Recent Transactions</h5>
+                                    <div class="table-drp">
+                                        <a href="#">
+                                            <img src="assets/images/drp-p.png" alt="">
+                                        </a>
+                                        <div class="drp-box">
+                                            <a href="#">
+                                                login
+                                            </a>
+                                            <a href="#">
+                                                logout
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive pmg-table-inner">
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="tab-red">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="assets/images/dq1.png" alt="">
+                                                            <div class="ml-3">
+                                                                <h5>Add to wallet</h5>
+                                                                <p class="mb-0">Oct 20, 2022</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <h5>₹ 174 <span>
+                                                            .00
+                                                        </span> </h5>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <h2 class="pro">Progress</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="tab-red gree">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="assets/images/dq2.png" alt="">
+                                                            <div class="ml-3">
+                                                                <h5>Add to wallet</h5>
+                                                                <p class="mb-0">Oct 20, 2022</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <h5>₹ 174 <span>
+                                                            .00
+                                                        </span> </h5>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <h2 class="fai">Cancel</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="tab-red orange">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="assets/images/dq3.png" alt="">
+                                                            <div class="ml-3">
+                                                                <h5>Add to wallet</h5>
+                                                                <p class="mb-0">Oct 20, 2022</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <h5>₹ 174 <span>
+                                                            .00
+                                                        </span> </h5>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <h2 class="suxx">Completed</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="tab-red blue">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="assets/images/dq4.png" alt="">
+                                                            <div class="ml-3">
+                                                                <h5>Add to wallet</h5>
+                                                                <p class="mb-0">Oct 20, 2022</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <h5>₹ 174 <span>
+                                                            .00
+                                                        </span> </h5>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <h2 class="suxx">Completed</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="tab-red orange">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="assets/images/dqq3.png" alt="">
+                                                            <div class="ml-3">
+                                                                <h5>Add to wallet</h5>
+                                                                <p class="mb-0">Oct 20, 2022</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <h5>₹ 174 <span>
+                                                            .00
+                                                        </span> </h5>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <h2 class="suxx">Completed</h2>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <a href="#">
+                                        <img src="assets/images/ar1.png" alt="">View all Transactions
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="container ">
+            <div class="row justify-content-between py-5 ">
+                <div class="col-lg-5 col-md-7 my-3 ">
+                    <div>
+                        <img src="./assets/images/flogo.png " alt=" " />
+                        <p class="text-justify font-fam text-white pt-5 lh ">
+                            Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
+                        </p>
+                        <div class="social ">
+                            <a href="# " class="mr-3 ">
+                                <img src="./assets/images/s1.png " alt=" " />
+                            </a>
+                            <a href="# " class="mx-3 ">
+                                <img src="./assets/images/s2.png " alt=" " />
+                            </a>
+                            <a href="# " class="mx-3 ">
+                                <img src="./assets/images/s3.png " alt=" " />
+                            </a>
+                            <a href="# " class="mx-3 ">
+                                <img src="./assets/images/s4.png " alt=" " />
+                            </a>
+                            <a href="# " class="mx-3 ">
+                                <img src="./assets/images/s5.png " alt=" " />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3 ">
+                    <div>
+                        <p class="text-white font-w600 font-size18 ">Company</p>
+                    </div>
+                    <div class="footer-link pt-4 ">
+                        <a href="# " class="text-white my-3 ">
+                            About
+                        </a>
+                        <a href="# " class="text-white my-3 ">
+                            Career
+                        </a>
+                        <a href="# " class="text-white my-3 ">
+                            Blog
+                        </a>
+                        <a href="# " class="text-white my-3 ">
+                            Investor Relations
+                        </a>
+                        <a href="# " class="text-white my-3 ">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3 ">
+                    <div>
+                        <p class="text-white font-w600 font-size18 ">Help & Support</p>
+                    </div>
+                    <div class="footer-link pt-4 ">
+                        <a href="# " class="text-white my-3 ">
+                            Payment Options
+                        </a>
+                        <a href="# " class="text-white my-3 ">
+                            FAQ
+                        </a>
+                        <a href="# " class="text-white my-3 ">
+                            Help
+                        </a>
+                        <a href="# " class="text-white my-3 ">
+                            Become a Partner
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cpr-text p-3 text-center ">
+                <p class="mb-0 text-white ">© 2022 PAYMYBILL all rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<!--Script-->
+<script src="./assets/js/jquery-3.6.0.min.js "></script>
+<script src="./assets/js/bootstrap.bundle.min.js "></script>
+<script src="assets/js/script.js "></script>
+
+
+
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PaymyBill-profileview</title>
+    <link rel="icon" href="./assets/images/fav.png" type="png" />
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <!-- font-popins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!--Owl Css-->
+    <link rel="stylesheet" href="./assets/vendor/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/vendor/css/owl.theme.default.min.css" />
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="./assets/css/paymybill.css" />
+</head>
+
+<body>
+    <header class="fixed-top nav-element-top">
+        <nav class="container navbar navbar-expand-lg py-0 py-sm-1">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img src="./assets/images/menu.png" alt=""></span>
+            </button>
+            <div class="collapse navbar-collapse text-center " id="navbarSupportedContent">
+                <div class="ml-auto">
+                    <div class="">
+                        <ul class="list-unstyled d-lg-flex  nav-element mb-0">
+                            <li class="">
+                                <a href="./index.html"
+                                    class="text-dark active font-size15 font-w600 py-2 px-3">Individual</a>
+                            </li>
+                            <li>
+                                <a href="./dashboard.html"
+                                    class="text-dark font-size15 font-w600 py-2  px-3">Business</a>
+                            </li>
+                            <li>
+                                <a href="./stake.html" class="text-dark font-size15 font-w600 py-2 px-3"> Company</a>
+                            </li>
+                            <li>
+                                <div class="dropdown more">
+                                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-expanded="false">
+                                        <a href="./calculator.html" class="text-dark  font-size15 font-w600 py-2 px-3">
+                                            More
+                                        </a>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown prof mx-5">
+                                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-expanded="false">
+                                        <a href="./calculator.html" class="text-dark  font-size15 font-w700 py-2 px-3">
+                                            <img src="./assets/images/nav-pr.png" alt="">
+                                            Welcome, <span class="font-size14 font-w500">
+                                                David Villa
+                                            </span>
+
+                                        </a>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Topup</a>
+                                        <a class="dropdown-item" href="#">My Orders</a>
+                                        <a class="dropdown-item" href="#">Rewards</a>
+                                        <a class="dropdown-item" href="#">Notification</a>
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                        <div class="dropdown-divider mr-5 "></div>
+                                        <a class="dropdown-item error" href="#">Help & Support</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="drp-pos">
+                                <div class="dropdown wallet">
+                                    <button class="btn mx-auto wallet-b dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                        <a href="#" class="text-dark  font-size15 font-w600 py-2 px-3">
+                                            <img src="./assets/images/Walletn.png" alt="" class="wallet-w">
+                                        </a>
+                                    </button>
+                                    <div class="dropdown-menu p-4" aria-labelledby="dropdownMenuButton">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <p class="font-size18 mb-0 font-w800 text-lit">Wallet</p>
+                                            <button class="btn top px-4 py-1">
+                                                Topup
+                                            </button>
+                                        </div>
+                                        <div class="d-flex mt-3 flex-wrap align-items-center">
+                                            <div class="inr">
+                                                <img src="./assets/images/inr.png" alt="">
+                                            </div>
+                                            <div class="ml-4">
+                                                <p class="text-dark mb-0 font-w500">Balance</p>
+                                                <p class="font-w700 mb-0 font-size20">12,546.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-3 flex-wrap align-items-center">
+                                            <div class="pt-3">
+                                                <button class="transfer-btn btn px-4 py-2" data-toggle="modal"
+                                                    data-target="#topup-poup">
+                                                    Transfer
+                                                </button>
+                                            </div>
+                                            <div class="ml-0 ml-md-3 pt-3">
+                                                <button class="request  btn px-2 py-2">
+                                                    Request Topup
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+    <!-- Rewards Page-->
+    <section class="section-p cal">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-12">
+                    <div class="request-main">
+                        <h4 class="font-w700 mb-0">
+                            About Us
+                        </h4>                     
+                    </div>
+                    <div class="my-5 about-text">
+                        <h6 class="font-size15 font-weight-bold">What we do?</h6>
+                        <p class="font-w500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exrcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="font-w500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exrcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h6 class="font-size15 font-weight-bold">Our Mission</h6>
+                        <p class="font-w500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exrcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="font-w500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exrcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h6 class="font-size15 font-weight-bold">Our Vison</h6>
+                        <p class="font-w500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exrcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="font-w500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exrcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between py-5">
+                <div class="col-lg-5 col-md-7 my-3">
+                    <div>
+                        <img src="./assets/images/flogo.png" alt="" />
+                        <p class="text-justify font-fam text-white pt-5 lh">
+                            Simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown.
+                        </p>
+                        <div class="social">
+                            <a href="#" class="mr-3">
+                                <img src="./assets/images/s1.png" alt="" />
+                            </a>
+                            <a href="#" class="mx-3">
+                                <img src="./assets/images/s2.png" alt="" />
+                            </a>
+                            <a href="#" class="mx-3">
+                                <img src="./assets/images/s3.png" alt="" />
+                            </a>
+                            <a href="#" class="mx-3">
+                                <img src="./assets/images/s4.png" alt="" />
+                            </a>
+                            <a href="#" class="mx-3">
+                                <img src="./assets/images/s5.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div>
+                        <p class="text-white font-w600 font-size18">Company</p>
+                    </div>
+                    <div class="footer-link pt-4">
+                        <a href="#" class="text-white my-3">
+                            About
+                        </a>
+                        <a href="#" class="text-white my-3">
+                            Career
+                        </a>
+                        <a href="#" class="text-white my-3">
+                            Blog
+                        </a>
+                        <a href="#" class="text-white my-3">
+                            Investor Relations
+                        </a>
+                        <a href="#" class="text-white my-3">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div>
+                        <p class="text-white font-w600 font-size18">Help & Support</p>
+                    </div>
+                    <div class="footer-link pt-4">
+                        <a href="#" class="text-white my-3">
+                            Payment Options
+                        </a>
+                        <a href="#" class="text-white my-3">
+                            FAQ
+                        </a>
+                        <a href="#" class="text-white my-3">
+                            Help
+                        </a>
+                        <a href="#" class="text-white my-3">
+                            Become a Partner
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cpr-text p-3 text-center">
+                <p class="mb-0 text-white">© 2022 PAYMYBILL all rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<!--Script-->
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+
+</html>
